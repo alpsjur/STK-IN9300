@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>sjur_assignment2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>solution2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7575,7 +7575,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Problem-1---Regression-%F0%9F%90%9F%F0%9F%92%80">Problem 1 - Regression 🐟💀<a class="anchor-link" href="#Problem-1---Regression-%F0%9F%90%9F%F0%9F%92%80">¶</a></h2><p>For the regression problems, we will work with the dataset <code>qsar_aquatic_toxicity.csv</code>. We start by reading in the data and store it in a dataframe <code>df_i</code>, with the naming antisipating the two sub-problems in (a). We will use Mean Squared Error (MSE) as a messure of error.</p>
+<h2 id="Problem-1---Regression">Problem 1 - Regression<a class="anchor-link" href="#Problem-1---Regression">¶</a></h2><p>For the regression problems, we will work with the dataset <code>qsar_aquatic_toxicity.csv</code>. We start by reading in the data and store it in a dataframe <code>df_i</code>, with the naming antisipating the two sub-problems in (a). We will use Mean Squared Error (MSE) as a messure of error.</p>
 </div>
 </div>
 </div>
@@ -7820,7 +7820,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(a)---Linear-regression-models-%F0%9F%93%88%E2%9E%96">(a) - Linear regression models 📈➖<a class="anchor-link" href="#(a)---Linear-regression-models-%F0%9F%93%88%E2%9E%96">¶</a></h3><p>We start by splitting the data into test and training sets. We will then train and evaluate an ordinary least squares model on both <code>df_i</code> and <code>df_ii</code> and report the results.</p>
+<h3 id="(a)---Linear-regression-models">(a) - Linear regression models<a class="anchor-link" href="#(a)---Linear-regression-models">¶</a></h3><p>We start by splitting the data into test and training sets. We will then train and evaluate an ordinary least squares model on both <code>df_i</code> and <code>df_ii</code> and report the results.</p>
 </div>
 </div>
 </div>
@@ -8062,7 +8062,7 @@ Test MSE:     1.6249
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(b)---Distribution-of-test-error-for-OLS-%F0%9F%93%8A%F0%9F%94%84">(b) - Distribution of test error for OLS 📊🔄<a class="anchor-link" href="#(b)---Distribution-of-test-error-for-OLS-%F0%9F%93%8A%F0%9F%94%84">¶</a></h3><p>We will repeat what we did in (a) 200 times, record the test error, and use a kernel density estimate to illustrate the distribution of the test errors.</p>
+<h3 id="(b)---Distribution-of-test-error-for-OLS">(b) - Distribution of test error for OLS<a class="anchor-link" href="#(b)---Distribution-of-test-error-for-OLS">¶</a></h3><p>We will repeat what we did in (a) 200 times, record the test error, and use a kernel density estimate to illustrate the distribution of the test errors.</p>
 </div>
 </div>
 </div>
@@ -8180,7 +8180,7 @@ Test MSE:     1.6249
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(c)---Variable-selection-for-OLS-%F0%9F%8E%9B%EF%B8%8F%F0%9F%94%A2">(c) - Variable selection for OLS 🎛️🔢<a class="anchor-link" href="#(c)---Variable-selection-for-OLS-%F0%9F%8E%9B%EF%B8%8F%F0%9F%94%A2">¶</a></h3><p>I will apply backward elimination and forward selection, and use both AIC and BIC as stopping criterias, to reduce the number of variables.</p>
+<h3 id="(c)---Variable-selection-for-OLS">(c) - Variable selection for OLS<a class="anchor-link" href="#(c)---Variable-selection-for-OLS">¶</a></h3><p>I will apply backward elimination and forward selection, and use both AIC and BIC as stopping criterias, to reduce the number of variables.</p>
 </div>
 </div>
 </div>
@@ -8449,7 +8449,7 @@ Test MSE for BIC criterion variable reduction: 1.6538
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(d)---Ridge-regression-tuned-with-bootstrap-and-k-folds-cross-validation-%E2%9B%B0%EF%B8%8F">(d) - Ridge regression tuned with bootstrap and k-folds cross-validation ⛰️<a class="anchor-link" href="#(d)---Ridge-regression-tuned-with-bootstrap-and-k-folds-cross-validation-%E2%9B%B0%EF%B8%8F">¶</a></h3><p>We will apply ridge regression und use both a boothstrapping method and k-folds cross-validation to find the optimal alpha-variable. We will use 10 folds for the cross vaidation.</p>
+<h3 id="(d)---Ridge-regression-tuned-with-bootstrap-and-k-folds-cross-validation">(d) - Ridge regression tuned with bootstrap and k-folds cross-validation<a class="anchor-link" href="#(d)---Ridge-regression-tuned-with-bootstrap-and-k-folds-cross-validation">¶</a></h3><p>We will apply ridge regression und use both a boothstrapping method and k-folds cross-validation to find the optimal alpha-variable. We will use 10 folds for the cross vaidation.</p>
 </div>
 </div>
 </div>
@@ -8724,7 +8724,7 @@ Test MSE for Ridge tuned with Bootstrap:            1.5725
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(e)---Generalised-additive-model-%F0%9F%93%88%E2%9E%95">(e) - Generalised additive model 📈➕<a class="anchor-link" href="#(e)---Generalised-additive-model-%F0%9F%93%88%E2%9E%95">¶</a></h3><p>We will fit GAMs using smoothing splines for each variable, using the module <code>pyGAM</code>. The complexity of the splines can be adjusted by changing the <code>lam</code> parameter. The standard value for <code>lam</code> is 0.6. Decreasing <code>lam</code> decreases the smoothing and increases the complexity, while increasing <code>lam</code> increases the smoothing and decreases the complexity.</p>
+<h3 id="(e)---Generalised-additive-model">(e) - Generalised additive model<a class="anchor-link" href="#(e)---Generalised-additive-model">¶</a></h3><p>We will fit GAMs using smoothing splines for each variable, using the module <code>pyGAM</code>. The complexity of the splines can be adjusted by changing the <code>lam</code> parameter. The standard value for <code>lam</code> is 0.6. Decreasing <code>lam</code> decreases the smoothing and increases the complexity, while increasing <code>lam</code> increases the smoothing and decreases the complexity.</p>
 </div>
 </div>
 </div>
@@ -9244,7 +9244,7 @@ Test MSE with optimal pruned tree: 2.1186
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(g)---Final-evaluation-of-regression-models-%F0%9F%8E%AF">(g) - Final evaluation of regression models 🎯<a class="anchor-link" href="#(g)---Final-evaluation-of-regression-models-%F0%9F%8E%AF">¶</a></h3><p>Lets plot both training and test MSE for the different models in one figure:</p>
+<h3 id="(g)---Final-evaluation-of-regression-models">(g) - Final evaluation of regression models<a class="anchor-link" href="#(g)---Final-evaluation-of-regression-models">¶</a></h3><p>Lets plot both training and test MSE for the different models in one figure:</p>
 </div>
 </div>
 </div>
@@ -9312,7 +9312,7 @@ Test MSE with optimal pruned tree: 2.1186
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Problem-2---Classification-%F0%9F%A7%AC%F0%9F%92%89">Problem 2 - Classification 🧬💉<a class="anchor-link" href="#Problem-2---Classification-%F0%9F%A7%AC%F0%9F%92%89">¶</a></h2><p>We will now move on to classification, and to the dataset <code>pimaindiansdiabetes2.csv</code>. For this section we will use the error, defined as 1 - accuracy, as the evaluation score. We start by reading in the data and split it into a training and test set.</p>
+<h2 id="Problem-2---Classification">Problem 2 - Classification<a class="anchor-link" href="#Problem-2---Classification">¶</a></h2><p>We will now move on to classification, and to the dataset <code>pimaindiansdiabetes2.csv</code>. For this section we will use the error, defined as 1 - accuracy, as the evaluation score. We start by reading in the data and split it into a training and test set.</p>
 </div>
 </div>
 </div>
@@ -9950,7 +9950,7 @@ Test MSE with optimal pruned tree: 2.1186
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(a)---kNN-classifier-optimized-using-leave-one-out-and-5-fold-cross-validation-%F0%9F%8F%98%EF%B8%8F%F0%9F%8F%98%EF%B8%8F">(a) - kNN classifier optimized using leave-one-out and 5-fold cross-validation 🏘️🏘️<a class="anchor-link" href="#(a)---kNN-classifier-optimized-using-leave-one-out-and-5-fold-cross-validation-%F0%9F%8F%98%EF%B8%8F%F0%9F%8F%98%EF%B8%8F">¶</a></h3><p>We will fit a k-Nearest Neighbours classifier to our dataset, and tune the number of neighbours using both leave-one-out (loo) and 5-folds cross-validation. We will preform the procedure on both the dataset where NaNs where simply excluded, and on the imputed dataset.</p>
+<h3 id="(a)---kNN-classifier-optimized-using-leave-one-out-and-5-fold-cross-validation">(a) - kNN classifier optimized using leave-one-out and 5-fold cross-validation<a class="anchor-link" href="#(a)---kNN-classifier-optimized-using-leave-one-out-and-5-fold-cross-validation">¶</a></h3><p>We will fit a k-Nearest Neighbours classifier to our dataset, and tune the number of neighbours using both leave-one-out (loo) and 5-folds cross-validation. We will preform the procedure on both the dataset where NaNs where simply excluded, and on the imputed dataset.</p>
 </div>
 </div>
 </div>
@@ -10576,7 +10576,7 @@ github.com/dswah/pyGAM/issues/163
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="(d)-Neural-Network-%F0%9F%A7%A0">(d) Neural Network 🧠<a class="anchor-link" href="#(d)-Neural-Network-%F0%9F%A7%A0">¶</a></h3><p>Finally, we will fit a neural network to the data. We will do a grid search with cross-validation to decide on the size of the network and the regularization term <code>alpha</code>. The values in the parameter grid are semi-educated guesses. I found the consept of double-decent that we talked about in the lectures facinating, so I made sure to include deep networks to see if these preformed better.</p>
+<h3 id="(d)-Neural-Network">(d) Neural Network<a class="anchor-link" href="#(d)-Neural-Network">¶</a></h3><p>Finally, we will fit a neural network to the data. We will do a grid search with cross-validation to decide on the size of the network and the regularization term <code>alpha</code>. The values in the parameter grid are semi-educated guesses. I found the consept of double-decent that we talked about in the lectures facinating, so I made sure to include deep networks to see if these preformed better.</p>
 </div>
 </div>
 </div>
@@ -10735,7 +10735,7 @@ Test error:                  0.1679
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Problem-3---Oral-presentation-%F0%9F%8C%A6%EF%B8%8F%F0%9F%8C%8D">Problem 3 - Oral presentation 🌦️🌍<a class="anchor-link" href="#Problem-3---Oral-presentation-%F0%9F%8C%A6%EF%B8%8F%F0%9F%8C%8D">¶</a></h2><p>Title : <strong>Combining Neural Networks and Physics for Weather and Climate Prediction</strong></p>
+<h2 id="Problem-3---Oral-presentation">Problem 3 - Oral presentation<a class="anchor-link" href="#Problem-3---Oral-presentation">¶</a></h2><p>Title : <strong>Combining Neural Networks and Physics for Weather and Climate Prediction</strong></p>
 <p>Abstract : Traditionally, General Circulation Models (GCMs) built on a physical understanding of the earth system have been the standard for weather forecasting and climate predictions. More recently, pure Machine Learning (ML) models have been applied to these tasks with some success. In this talk, I will present a new method that combines GCMs with ML, which, in certain cases, outperforms both traditional GCMs and pure ML models.  I will focus on how physical models and ML models can be combined, and on the advantages and caviats of a hybrid model. I will base my presentation on the paper <em>Neural General Circulation Models for Weather and Climate</em>, published this year.</p>
 <p>Reference : <a href="https://doi.org/10.48550/arXiv.2311.07222">https://doi.org/10.48550/arXiv.2311.07222</a></p>
 </div>
